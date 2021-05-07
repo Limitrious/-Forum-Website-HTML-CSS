@@ -1,0 +1,86 @@
+*{
+    /*初始化,清除页面元素的内外边距*/
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("../images/hacg.fun_32.jpg");
+}
+.login{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.login a{
+    display: block;
+    width: 140px;
+    height: 60px;
+    font-size: 10px;
+    color: #f2e0fa;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+}
+.login a:link,.login:visited{
+    color: #f2e0fa;
+}
+.login a:hover,.login a:active{
+    color: #b0ebff;
+    background: rgba(220,255,252,0.3);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    min-width: 160px;
+    width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+div.container{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+ul.container{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+ul.container a{
+    /*相对定位*/
+    position: relative;
+    /*将a这个行内元素转换为块级元素 不然无法设置宽和高*/
+    display: block;
+    width: 140px;
+    height: 60px;
+    /*行高*/
+    line-height: 60px;
+    text-align: center;
+    color: #f2e0fa;
+    font-size: 20px;
+    /*取消下划线*/
+    text-decoration: none;
+    /*过渡事件*/
+    transition: all 0.3s ease-in-out;
+}
+ul.container a:hover{
+    background-color: #f2e0fa;
+    color: #000000;
+    /*加个发光效果和下面的倒影*/
+    /*模糊度加到50px*/
+    box-shadow: 0 0 50px #f2e0fa;
+    /*below是下倒影，1px是倒影的元素相隔的距离，最后是个渐变的颜色*/
+    -webkit-box-reflect: below 1px
+    linear-gradient(transparent,rgba(0, 0, 0, 0.3));
+    animation: label 1s;
+    /*设置以下属性的延迟时间*/
+    transition-delay: 0.4s;
+}
