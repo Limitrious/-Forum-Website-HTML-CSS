@@ -5,6 +5,8 @@
 }
 body{
     background-image: url("../images/hacg.fun_32.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .login{
     position: absolute;
@@ -78,6 +80,8 @@ ul.container a:hover{
     /*模糊度加到50px*/
     box-shadow: 0 0 50px #f2e0fa;
     /*below是下倒影，1px是倒影的元素相隔的距离，最后是个渐变的颜色*/
+    box-reflect: below 1px
+    linear-gradient(transparent,rgba(0, 0, 0, 0.3));
     -webkit-box-reflect: below 1px
     linear-gradient(transparent,rgba(0, 0, 0, 0.3));
     animation: label 1s;

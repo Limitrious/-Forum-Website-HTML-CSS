@@ -5,13 +5,13 @@
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="css/style1.css"/>
 </head>
-<body>
-<div class="container">
+<body onscroll="ChangeTopBackgroundColor()">
+<div class="container" id="container">
     <ul class="container">
         <li><a href="javascript:void(0);">首页</a></li>
+        <li><a href="javascript:void(0);">学习</a></li>
         <li><a href="javascript:void(0);">社区</a></li>
         <li><a href="javascript:void(0);">关注</a></li>
-        <li><a href="javascript:void(0);">好友</a></li>
         <li><a href="javascript:void(0);">我的</a></li>
         <li><a href="javascript:void(0);">关于</a></li>
     </ul>
@@ -26,9 +26,11 @@
     </div>
 </div>
 <div style="height: 60px;"></div>
+<!--<div style="height: 4000px"></div>-->
 <audio autoplay loop>
     <source src="audio/One%20Step%20Closer.wav" />
     Your browser does not support HTML5
 </audio>
+<script src="js/ScrollController.js"></script>
 </body>
 </html>
