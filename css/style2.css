@@ -1,0 +1,46 @@
+.contentIntro{
+    width: 840px;
+    margin: 10px auto;
+    text-align: center;
+}
+.contentBox{
+    width: 840px;
+    margin: 10px auto;
+    background-color: rgba(0,0,0,0.5);
+    height: 150px;
+}
+.contentBox dl{
+    display: flex;
+}
+.contentBox dt{
+    padding: 24px;
+    font-size: 28px;
+}
+.insideContent{
+    flex-direction: column;
+    font-size: 14px;
+}
+.insideContent dt{
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-top: 16px;
+}
+.insideContent dd{
+    margin-right: 20px;
+}
+.insideContent a:link,.insideContent a:visited{
+    text-decoration: none;
+}
+.insideContent a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.insideContent a:active{
+    text-decoration: underline;
+    color: red;
+}
+#footer{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}

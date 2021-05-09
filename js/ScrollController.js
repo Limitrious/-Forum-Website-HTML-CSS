@@ -21,22 +21,17 @@ function ScrollPosition() {
         height: h
     };
 }
-function ChangeTopBackgroundColor() {
+function ChangeTopBackgroundColor(){
     let guides = document.getElementById("container");
-    let loc = ScrollPosition();
-    // console.log(loc.top);
-    // console.log(window.screen.height);
-    // if(loc.top > window.screen.height){
-    //     // guides.style.backgroundColor = "rgba(0,0,0,0.5)";
-    //     guides.style.animation = "toFull 5s";
-    // }
-    // else if(loc.top <= window.screen.height){
-    //     // guides.style.backgroundColor = "transparent";
-    //     guides.style.animation = "toNull 5s";
-    // }
-    let percent = loc.top / screen.height;
-    if(percent / 2 <= 0.5){
-        if(0.5 - percent / 2 <= 0.05) percent = 1;
-        guides.style.backgroundColor = "rgba(0,0,0," + (percent / 2).toString() + ")";
+    if(ScrollPosition().top >= screen.height / 100){
+        console.log(true);
+        guides.style.backgroundColor = "rgba(0,0,0,0.6)";
+        guides.style.transition = "all 0.3s ease-in-out";
+    }
+    else if(ScrollPosition().top < screen.height / 100){
+        console.log(false);
+        guides.style.backgroundColor = "rgba(0,0,0,0)";
+        guides.style.transition = "all 0.3s ease-in-out";
     }
 }
+ChangeTopBackgroundColor();
