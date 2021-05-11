@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="css/style1.css"/>
+    <link rel="stylesheet" type="text/css" href="css/Copyright-fixed.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body onscroll="ChangeTopBackgroundColor()">
 <div class="container" id="container">
-    <ul class="container">
-        <li><a href="index.html">首页</a></li>
+<!--    <div class="logo">-->
+<!--        <a href="index.html"><img src="images/logo_bright.png" width="50px" height="50px"/></a>-->
+<!--    </div>-->
+    <ul class="container" id="guides">
+        <li><a href="#">首页</a></li>
         <li><a href="learn.html">学习</a></li>
-        <li><a href="javascript:void(0);">社区</a></li>
-        <li><a href="javascript:void(0);">关注</a></li>
-        <li><a href="javascript:void(0);">我的</a></li>
-        <li><a href="javascript:void(0);">关于</a></li>
+        <li><a href="404.html">社区</a></li>
+        <li><a href="404.html">关注</a></li>
+        <li><a href="404.html">我的</a></li>
+        <li><a href="404.html">关于</a></li>
     </ul>
-    <div class="login">
+    <div class="login" id="login">
         <div class="dropdown">
             <a href="#" style="background: none;">登录/注册</a>
             <div class="dropdown-content">
-                <a href="#" style="color: #f2e0fa">登录</a>
+                <a href="Login.html" style="color: #f2e0fa">登录</a>
                 <a href="#" style="color: #f2e0fa">注册</a>
             </div>
         </div>
@@ -34,14 +39,19 @@
     <p class="content" style="padding-bottom: 40px;">都可以来到这里进行交流与学习。我们欢迎任何对知识渴望的“学者”，无论你是谁。</p>
     <button class="joinUs" onclick="alert('此功能暂未开发，敬请期待！');">加入我们</button>
 </div>
+<div id="footer">
+    <p>&copy;<span id="copy"></span>&nbsp;<a class="contact" href="https://github.com/amekiri13">Amekiri</a>&nbsp;All Rights Reserved</p>
+</div>
 <audio autoplay loop>
     <source src="audio/One%20Step%20Closer.wav" />
     Your browser does not support HTML5
 </audio>
 <script src="js/ScrollController.js"></script>
-<!--<script src="js/Layer1.js"></script>-->
+<script src="js/CopyrightDisplay.js"></script>
+<script src="js/Page.js"></script>
 <script>
-    console.log(screen.height);
+    console.log(window.innerWidth);
+    console.log(window.innerHeight);
 </script>
 </body>
 </html>

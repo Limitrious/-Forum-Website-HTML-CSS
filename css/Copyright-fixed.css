@@ -1,0 +1,16 @@
+#footer{
+    margin: 10px 0;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+a.contact{
+    text-decoration: none;
+}
+a.contact:link,a.contact:visited{
+    text-decoration: none;
+}
+a.contact:hover{
+    text-decoration: underline #ffffff;
+}

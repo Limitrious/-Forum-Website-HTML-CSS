@@ -39,8 +39,8 @@
     text-decoration: underline;
     color: red;
 }
-#footer{
+#footer_noFixed{
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
