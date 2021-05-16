@@ -18,12 +18,14 @@ function ChangeLayout(){
     var login = document.getElementById("login");
     var container = document.getElementById("container");
     var width = window.innerWidth;
+    var list = document.getElementById("list");
     console.log(width);
     if(width >= 1088){
         document.body.style.overflowX = "auto";
         guides.style.justifyContent = "center";
         guides.style.transition = "all 0.3 ease-in-out";
         guides.style.display = "flex";
+        list.style.display = "none";
         $(".contentBox").width(840);
         $(".contentBox").height(150);
         $(".contentIntro").css("text-align","center");
@@ -33,6 +35,7 @@ function ChangeLayout(){
         guides.style.justifyContent = "flex-start";
         guides.style.transition = "all 0.3 ease-in-out";
         guides.style.display = "flex";
+        list.style.display = "none";
         $(".contentBox").width(840);
         $(".contentBox").height(150);
         $(".contentIntro").css("text-align","center");
@@ -43,6 +46,7 @@ function ChangeLayout(){
         $(".contentBox").height("auto");
         $(".contentIntro").css("text-align","left");
         document.body.style.overflowX = "hidden";
+        list.style.display = "block";
     }
     if(width < 980){
         guides.style.display = "none";
@@ -50,12 +54,14 @@ function ChangeLayout(){
         $(".contentBox").height(150);
         $(".contentIntro").css("text-align","center");
         document.body.style.overflowX = "hidden";
+        list.style.display = "block";
     }
     if(width < 840){
         $(".contentBox").width("auto");
         $(".contentBox").height("auto");
         $(".contentIntro").css("text-align","left");
         document.body.style.overflowX = "hidden";
+        list.style.display = "block";
     }
 }
 ChangeLayout();

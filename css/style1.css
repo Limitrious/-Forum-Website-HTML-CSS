@@ -157,3 +157,52 @@ button.joinUs:hover{
     -webkit-animation: label 1s;
     transition-delay: 0.4s;
 }
+#list{
+    display: none;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+a.bt{
+    display: block;
+    height: 60px;
+    width: 60px;
+    background-image: url("../images/list_white.png");
+    background-size: 60px 60px;
+    transition: all 0.3s ease-in-out;
+}
+a.bt:link,a.bt:visited{
+    background-image: url("../images/list_white.png");
+    background-size: 60px 60px;
+    background-color: transparent;
+}
+.bt:hover{
+    background-image: url("../images/list_black.png");
+    background-size: 60px 60px;
+    background-color: #f2e0fa;
+}
+.il{
+    width: 140px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.il a{
+    display: block;
+    width: 140px;
+    height: 60px;
+    color: #f2e0fa;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.il a:link,.li a:visited{
+    color: #f2e0fa;
+}
+.il a:hover,.il a:active{
+    color: #b0ebff;
+    background: rgba(220,255,252,0.3);
+}
