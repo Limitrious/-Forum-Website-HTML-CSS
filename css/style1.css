@@ -28,8 +28,9 @@ div.logo a:hover, div.logo img{
     background-color: #f2e0fa;
 }
 .login{
+    display: inline-block;
     position: absolute;
-    /*right: 0;*/
+    /*float: right;*/
     right: 0;
     top: 0;
 }
@@ -72,6 +73,7 @@ div.container{
     left: 0;
     top: 0;
     transition: all 0.3s ease-in-out;
+    height: 60px;
 }
 ul.container{
     display: flex;
@@ -116,7 +118,7 @@ ul.container a:hover{
 }
 #content{
     width: 100%;
-    height: 70vh;
+    height: 68vh;
     text-align: center;
     padding-top: 200px;
     /*padding-bottom: 10vh;*/

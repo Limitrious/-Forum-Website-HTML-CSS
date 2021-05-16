@@ -34,4 +34,7 @@ function ChangeTopBackgroundColor(){
         guides.style.transition = "all 0.3s ease-in-out";
     }
 }
+function bodyScroll(event){
+    event.preventDefault();
+}
 ChangeTopBackgroundColor();
